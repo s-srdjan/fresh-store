@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 import jsonServer from "json-server";
-import db from "./db.json";
+import db from "./db.json" assert { type: "json" };
 
 const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
