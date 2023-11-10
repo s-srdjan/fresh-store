@@ -1,3 +1,5 @@
+import { useLoaderData } from "react-router-dom";
+import { getOrder } from "../../services/apiRestaurant";
 import {
   calcMinutesLeft,
   formatCurrency,
@@ -5,6 +7,8 @@ import {
 } from "../../utils/helpers";
 
 function Order() {
+  const order = useLoaderData();
+
   const {
     id,
     status,
@@ -45,6 +49,11 @@ function Order() {
       </div>
     </div>
   );
+}
+
+export async function loader({ params }) {
+  const order = await getOrder(params.orderId);
+  return order;
 }
 
 export default Order;
