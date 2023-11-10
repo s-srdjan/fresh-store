@@ -4,7 +4,7 @@
       "itemId": 1,
       "name": "Artisanal Whole Grain Loaf",
       "unitPrice": 2,
-      "imageUrl": "public/img/artisan-loaf.jpg",
+      "imageUrl": "/img/artisan-loaf.jpg",
       "ingredients": ["whole grain flour", "honey", "seeds"],
       "soldOut": true
     },
@@ -12,7 +12,7 @@
       "itemId": 2,
       "name": "Cranberry Orange Scone",
       "unitPrice": 3,
-      "imageUrl": "public/img/cranberry-orange-scone.jpg",
+      "imageUrl": "/img/cranberry-orange-scone.jpg",
       "ingredients": ["cranberries", "orange zest", "buttermilk"],
       "soldOut": false
     },
@@ -20,7 +20,7 @@
       "itemId": 3,
       "name": "Almond Croissant",
       "unitPrice": 5,
-      "imageUrl": "public/img/almond-croissant.jpg",
+      "imageUrl": "/img/almond-croissant.jpg",
       "ingredients": ["almonds", "butter", "pastry dough"],
       "soldOut": true
     },
@@ -28,7 +28,7 @@
       "itemId": 4,
       "name": "Blueberry Muffin",
       "unitPrice": 2.5,
-      "imageUrl": "public/img/blueberry-muffin.jpg",
+      "imageUrl": "/img/blueberry-muffin.jpg",
       "ingredients": ["blueberries", "vanilla", "buttermilk"],
       "soldOut": false
     },
@@ -36,7 +36,7 @@
       "itemId": 5,
       "name": "Chocolate Hazelnut Danish",
       "unitPrice": 7,
-      "imageUrl": "public/img/hazelnut-danish.jpg",
+      "imageUrl": "/img/hazelnut-danish.jpg",
       "ingredients": ["chocolate", "hazelnuts", "pastry dough"],
       "soldOut": false
     },
@@ -44,7 +44,7 @@
       "itemId": 6,
       "name": "Oatmeal Raisin Cookie",
       "unitPrice": 2,
-      "imageUrl": "public/img/oatmeal-raisin-cookies.jpg",
+      "imageUrl": "/img/oatmeal-raisin-cookies.jpg",
       "ingredients": ["oats", "raisins", "cinnamon"],
       "soldOut": true
     },
@@ -52,7 +52,7 @@
       "itemId": 7,
       "name": "Cherry Almond Tart",
       "unitPrice": 6,
-      "imageUrl": "public/img/cherry-tart.jpg",
+      "imageUrl": "/img/cherry-tart.jpg",
       "ingredients": ["cherries", "almonds", "flaky crust"],
       "soldOut": false
     },
@@ -60,7 +60,7 @@
       "itemId": 8,
       "name": "Pumpkin Spice Bread",
       "unitPrice": 3,
-      "imageUrl": "public/img/pumpkin-bread.jpg",
+      "imageUrl": "/img/pumpkin-bread.jpg",
       "ingredients": ["pumpkin", "spices", "walnuts"],
       "soldOut": false
     },
@@ -68,7 +68,7 @@
       "itemId": 9,
       "name": "Lemon Poppy Seed Muffin",
       "unitPrice": 4,
-      "imageUrl": "public/img/lemon-poppy-seed-muffins.jpg",
+      "imageUrl": "/img/lemon-poppy-seed-muffins.jpg",
       "ingredients": ["lemon", "poppy seeds", "yogurt"],
       "soldOut": true
     },
@@ -76,7 +76,7 @@
       "itemId": 10,
       "name": "Cinnamon Raisin Bagel",
       "unitPrice": 2,
-      "imageUrl": "public/img/cinnamon-bagel.jpg",
+      "imageUrl": "/img/cinnamon-bagel.jpg",
       "ingredients": ["cinnamon", "raisins", "bread dough"],
       "soldOut": false
     }
