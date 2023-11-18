@@ -22,19 +22,25 @@ server.post("/order", (req, res) => {
   const { customer, phone, position, address, status, priority, cart } =
     req.body;
 
+  const createdAt = faker.date.recent().toISOString();
+  const estimatedDelivery = deliveryDate();
+
   const order = {
     customer,
     phone,
     position,
     address,
-    status,
+    status:
+      new Date(estimatedDelivery) > new Date(createdAt)
+        ? "Preparing"
+        : "Delivered",
     priority,
     cart,
     id: faker.string.alphanumeric(5),
-    createdAt: faker.date.recent().toISOString(),
-    estimatedDelivery: faker.date.soon().toISOString(),
+    createdAt,
+    estimatedDelivery,
     orderPrice: calculateOrderPrice(cart),
-    priorityPrice: calculatePriorityPrice(cart, priority),
+    priorityPrice: calculatePriorityPrice(cart),
   };
 
   db.order.push(order);
@@ -76,11 +82,23 @@ function calculateOrderPrice(cart) {
   return orderPrice;
 }
 
-function calculatePriorityPrice(cart, priority) {
+function calculatePriorityPrice(cart) {
   let priorityPrice;
   let orderPrice = calculateOrderPrice(cart);
-  priorityPrice = priority ? orderPrice * 0.2 : 0;
+  priorityPrice = orderPrice * 0.2;
   return priorityPrice;
+}
+
+function deliveryDate() {
+  const currentDate = new Date();
+
+  const randomMinutes = Math.floor(Math.random() * 70) + 1;
+
+  const deliveryDate = new Date(currentDate.getTime() + randomMinutes * 60000);
+
+  const deliveryDateISOString = deliveryDate.toISOString();
+
+  return deliveryDateISOString;
 }
 
 server.use(jsonServer.router("db.json"));
