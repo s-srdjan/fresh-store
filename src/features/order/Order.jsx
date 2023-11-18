@@ -7,7 +7,7 @@ import {
 } from "../../utils/helpers";
 import OrderItem from "./OrderItem";
 import { useEffect } from "react";
-import UpdateOrder from "./updateOrder";
+import UpdateOrder from "./UpdateOrder";
 
 function Order() {
   const order = useLoaderData();
@@ -56,7 +56,7 @@ function Order() {
             ? `Only ${calcMinutesLeft(estimatedDelivery)} minutes left 😊`
             : "Order should have arrived."}
         </p>
-        <p className="text-xs text-stone-500">
+        <p className="text-sm text-stone-700">
           (Estimated delivery : {formatDate(estimatedDelivery)}
         </p>
       </div>
@@ -81,7 +81,7 @@ function Order() {
         </p>
         {priority && (
           <p className="text-sm font-medium text-stone-600">
-            Price with priority delivery: {formatCurrency(priorityPrice)}
+            Priority delivery: {formatCurrency(priorityPrice)}
           </p>
         )}
         <p className="font-bold">
