@@ -13,6 +13,10 @@ server.get("/menu", (req, res) => {
   res.json({ status: "success", data: db.menu });
 });
 
+server.get("/", (req, res) => {
+  res.json({ status: "success", data: db.testimonial });
+});
+
 // Custom route for handling GET requests to /cart
 server.get("/cart", (req, res) => {
   res.json({ status: "success", data: db.cart });

@@ -11,6 +11,15 @@ export async function getMenu() {
   return data;
 }
 
+export async function getTestimonial() {
+  const res = await fetch(`${API_URL}/`);
+
+  if (!res.ok) throw Error("failed getting testimonial");
+
+  const { data } = await res.json();
+  return data;
+}
+
 export async function getOrder(id) {
   const res = await fetch(`${API_URL}/order/${id}`);
   if (!res.ok) throw Error(`Couldn't find order #${id}`);
