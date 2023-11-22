@@ -81,6 +81,48 @@
       "soldOut": false
     }
   ],
+  "testimonial": [
+    {
+      "id": 1,
+      "name": "Emily Johnson",
+      "headshot": "img/faces/face1.jpg",
+      "stars": 5,
+      "location": "New York City, NY",
+      "body": "I absolutely love ordering from this online bakery! The freshness of their products is unmatched. The variety and taste keep me coming back for more. Highly recommend!"
+    },
+    {
+      "id": 2,
+      "name": "Michael Thompson",
+      "headshot": "img/faces/face2.jpg",
+      "stars": 4.5,
+      "location": "Los Angeles, CA",
+      "body": "Being a regular customer, I can confidently say that this online bakery is the best. The convenience of ordering and the deliciousness of the treats make it my top choice every time!"
+    },
+    {
+      "id": 3,
+      "name": "Sarah Davis",
+      "headshot": "img/faces/face3.jpg",
+      "stars": 5,
+      "location": "Chicago, IL",
+      "body": "I'm so glad I found this online bakery! The quality of their baked goods is outstanding. Quick delivery, fresh products, and a delightful experience overall. Will continue to order from here!"
+    },
+    {
+      "id": 4,
+      "name": "Matthew Wilson",
+      "headshot": "img/faces/face4.jpg",
+      "stars": 4,
+      "location": "Houston, TX",
+      "body": "I've tried many online bakeries, but this one stands out. The taste and presentation of their products are fantastic. It's like having a local bakery right at your doorstep. Great job!"
+    },
+    {
+      "id": 5,
+      "name": "Olivia Turner",
+      "headshot": "img/faces/face5.jpg",
+      "stars": 5,
+      "location": "Miami, FL",
+      "body": "As a dessert enthusiast, I'm impressed by the freshness and flavor offered by this online bakery. The easy ordering process and prompt delivery make it a go-to choice for all my sweet cravings!"
+    }
+  ],
   "order": [],
   "cart": []
 }
