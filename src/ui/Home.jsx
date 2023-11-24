@@ -7,10 +7,11 @@ import { useLoaderData } from "react-router-dom";
 
 function Home() {
   const username = useSelector((state) => state.user.username);
-  const testimonial = useLoaderData();
+  const testimonials = useLoaderData();
+  // const testimonialsLength = testimonials.length;
 
   return (
-    <div className="my-10 px-4 text-center sm:my-16">
+    <div className="my-10 grid h-[80vh] grid-rows-[7rem_5rem_auto] justify-between px-4 text-center sm:my-16">
       <h1 className="mb-8 text-xl font-medium md:text-3xl">
         Fresh bakery store
         <br />
@@ -22,14 +23,14 @@ function Home() {
       {username === "" ? (
         <CreateUser />
       ) : (
-        <Button to="/menu" type="primary">
-          Continue ordering, {username}
-        </Button>
+        <span className="place-self-center">
+          <Button to="/menu" type="primary">
+            Continue ordering, {username}
+          </Button>
+        </span>
       )}
 
-      {testimonial.map((t) => (
-        <HomeSlider testimonial={t} key={t.id} />
-      ))}
+      <HomeSlider testimonials={testimonials} />
     </div>
   );
 }
